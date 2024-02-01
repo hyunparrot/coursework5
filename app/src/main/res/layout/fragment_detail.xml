@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailMainFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/iconItemCardView2"-->
+<!--            android:layout_width="185dp"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:layout_marginEnd="5dp"-->
+<!--            android:backgroundTint="#62CC06"-->
+<!--            app:cardCornerRadius="7dp"-->
+<!--            app:cardElevation="3dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent">-->
+<!--            &lt;!&ndash; 내보관함 버튼 &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvGallery"-->
+<!--                android:layout_width="185dp"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="내보관함"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/iconItemCardView1"-->
+<!--            android:layout_width="185dp"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:backgroundTint="#62CC06"-->
+<!--            app:cardCornerRadius="7dp"-->
+<!--            app:cardElevation="3dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvImageSearch"-->
+<!--                android:layout_width="185dp"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="이미지 검색"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutGallery2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLayout2"
+        app:layout_constraintStart_toStartOf="@+id/buttonLayout2"
+        app:layout_constraintTop_toTopOf="@+id/buttonLayout2" />
+
+    <FrameLayout
+        android:id="@+id/frameLayoutImageSearch2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLayout2"
+        app:layout_constraintStart_toStartOf="@+id/buttonLayout2"
+        app:layout_constraintTop_toTopOf="@+id/buttonLayout2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

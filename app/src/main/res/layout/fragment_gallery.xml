@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailFragmentContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GalleryFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/iconItemCardView2"
+        android:layout_width="185dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#62CC06"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <!-- 내보관함 버튼 -->
+        <TextView
+            android:id="@+id/tvGallery"
+            android:layout_width="185dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="내보관함"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/detailFragmentContainer"-->
+<!--        android:layout_width="185dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/iconItemCardView2"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/iconItemCardView2"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/iconItemCardView2"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/iconItemCardView2">-->
+
+        <!-- Your existing views for GalleryFragment go here -->
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
